@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Remove shadow/filter effects from images that might contain dashed lines */
+img {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove any embedded SVG filters in images */
+img[src*="logo"] {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Hide any SVG defs or filters that might be rendering */
+svg defs,
+svg filter,
+svg feGaussianBlur,
+svg feOffset,
+svg feFlood,
+svg feComposite,
+svg feMerge {
+  display: none !important;
+}
+
+/* Hide SVG icons specifically in the footer contact section that are causing dashed lines */
+footer .space-y-4 svg {
+  display: none !important;
+}
+
+/* Remove diagonal dashed lines pattern - target SVG with dashed strokes */
+svg line[stroke-dasharray],
+svg path[stroke-dasharray],
+svg polyline[stroke-dasharray],
+svg polygon[stroke-dasharray] {
+  display: none !important;
+}
+
+/* Remove SVG elements positioned absolutely as background patterns */
+svg[style*="position"],
+svg[style*="absolute"],
+svg[style*="dashed"],
+svg[style*="stroke-dasharray"] {
+  display: none !important;
+}
+
+/* Remove background images with patterns */
+[style*="background-image"] {
+  background-image: none !important;
+}
+
+/* Remove any decorative background patterns from footer */
+footer::before,
+footer::after,
+footer *::before,
+footer *::after {
+  display: none !important;
+}
+
+/* Remove any pseudo-elements that might contain dashed patterns */
+*::before,
+*::after {
+  background-image: none !important;
+  border-image: none !important;
+}
+
+/* Force remove any background patterns */
+.bg-inova-blue::before,
+.bg-inova-blue::after {
+  display: none !important;
+}
+
+/* Disable cursor trail effects and hover patterns */
+footer {
+  pointer-events: auto !important;
+}
+
+footer * {
+  pointer-events: auto !important;
+}
+
+/* Remove any cursor trail or mouse follow effects */
+body::before,
+body::after,
+html::before,
+html::after {
+  display: none !important;
+}
+
+/* Disable any canvas or cursor trail elements */
+canvas {
+  display: none !important;
+}
+
+/* Remove hover effects that might create dashed lines */
+footer:hover::before,
+footer:hover::after,
+footer *:hover::before,
+footer *:hover::after {
+  display: none !important;
+}
