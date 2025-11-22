@@ -49,7 +49,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/5548996863470?text=Olá%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Inova%20Financeira."
+                href="https://wa.me/5583993812261?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20informações.%20Pode%20me%20ajudar?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-inova-gold hover:bg-dark-gold text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl inline-flex items-center justify-center"
